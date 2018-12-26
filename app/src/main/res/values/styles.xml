@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--字体样式-->
+    <style name="font_color_2c2c2c_15sp">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_2c2c2c</item>
+    </style>
+
+    <style name="font_color_2c2c2c_20sp">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/color_2c2c2c</item>
+    </style>
+
+    <style name="font_color_2c2c2c_13sp">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color_2c2c2c</item>
+    </style>
+
+    <style name="StartAppTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:windowBackground">@drawable/boot_background</item>-->
+        <item name="android:windowBackground">@drawable/ic_launcher</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+
+    <!--直线的样式-->
+
+    <style name="lines_color_2c2c2c_1px">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/color_2c2c2c</item>
+    </style>
+
+</resources>

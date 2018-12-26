@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiaoxiao.mobivans.ui.activity.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/main_bar_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_main_home"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/home1" />
+
+            <TextView
+                android:id="@+id/txt_main_home"
+                style="@style/font_color_2c2c2c_13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="首页" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_bar_discovery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_main_discovery"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/home1" />
+
+            <TextView
+                android:id="@+id/txt_main_discovery"
+                style="@style/font_color_2c2c2c_13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="发现" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_bar_shopping_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_main_shop_cart"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/home1" />
+
+            <TextView
+                android:id="@+id/txt_main_shop_cart"
+                style="@style/font_color_2c2c2c_13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="购物车" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_bar_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_main_my"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/home1" />
+
+            <TextView
+                android:id="@+id/txt_main_my"
+                style="@style/font_color_2c2c2c_13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="我的" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/lines_color_2c2c2c_1px"
+        android:layout_above="@+id/linear_bottom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_line"
+        android:layout_alignParentTop="true">
+
+        <com.xiaoxiao.mobivans.customerview.MyViewPager
+            android:id="@+id/myViewpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.xiaoxiao.mobivans.customerview.MyViewPager>
+    </LinearLayout>
+
+</RelativeLayout>
